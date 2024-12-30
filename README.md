@@ -31,13 +31,19 @@ In the full URL of your class page, you will see something like:
 
 `https://moodle.oakland.edu/course/view.php?id=298318`
 
-Grad the value after `id=`, and paste that in place of `123456` in `config.json`
+Grab the value after `id=`, and paste that in place of `123456` in `config.json`
 
 ### Run the script
 
 (Optionally) Create a virtual environment for dependencies:
 
-`python3.12 -m venv .env && source .env/bin/activate`
+- MacOS, Linux
+
+`python -m venv .env && source .env/bin/activate`
+
+- Windows
+
+`python -m venv .env && .env\Scripts\activate`
 
 Install dependencies:
 
@@ -45,7 +51,7 @@ Install dependencies:
 
 Run the script:
 
-`python3.12 moodle-emails.py`
+`python moodle-emails.py`
 
 
 
