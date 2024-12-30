@@ -53,7 +53,7 @@ def main():
     for student_url in tqdm(student_urls, desc='Getting student emails...'):
         email = get_student_email(student_url, cookies)
         if email is not None:
-            emails.append(get_student_email(student_url, cookies))
+            emails.append(email)
     with open('emails.txt', 'w') as f:
         f.write('\n'.join(emails))
 
